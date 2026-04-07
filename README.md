@@ -60,29 +60,6 @@ python run.py run.parts=[1]
 python run.py run.parts=[2]
 ```
 
-## What Gets Generated
-
-### Part 1 – WVS-Style (36 prompts, no country variation)
-- **Q64–Q89**: Confidence in 26 organizations (4-point scale)
-- **Q292**: 11 politician/government trust items (5-point scale)
-
-### Part 2 – Stated Trust (12 countries × 8 institutions × 12 items = 1,152 prompts)
-- 4 sub-scales: Overall Trust (OT), Benevolent Intent (BI), Competence (CO), Integrity/Honesty (IH)
-- 3 items per sub-scale (1 reverse-coded)
-- 7-point Likert scale
-
-### Part 2 – Revealed Trust (12 countries × 48 scenarios = 576 prompts)
-- **Government**: 8 delegation scenarios
-- **Military**: 8 scenarios
-- **Media**: 8 scenarios
-- **Judiciary**: 6 scenarios
-- **Elections**: 6 scenarios
-- **Central Bank**: 6 scenarios
-- **Police**: 6 scenarios
-
-### Total per model per repetition: ~1,764 prompts
-### With 4 models × 5 reps: ~35,280 API calls
-
 ## Output Structure
 
 ```
