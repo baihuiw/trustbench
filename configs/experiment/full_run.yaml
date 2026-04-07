@@ -1,0 +1,4 @@
+# Full experiment: Part 1 (WVS-style) + Part 2 (Stated + Revealed trust)
+name: "full_run"
+description: "Complete TrustBench experiment across all models, countries, institutions"
+parts: [1, 2]

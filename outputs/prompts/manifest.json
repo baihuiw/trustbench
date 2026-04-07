@@ -1,0 +1,74 @@
+{
+  "countries": [
+    "Norway",
+    "Canada",
+    "Japan",
+    "United States",
+    "India",
+    "Hungary",
+    "Ukraine",
+    "Turkey",
+    "Nigeria",
+    "Russia",
+    "China",
+    "Saudi Arabia"
+  ],
+  "institutions": [
+    "government",
+    "military",
+    "media",
+    "judiciary",
+    "elections",
+    "central_bank",
+    "police",
+    "major_public_institutions"
+  ],
+  "models": [
+    "GPT-4o",
+    "GPT-4o Mini",
+    "Llama 3.3 70B",
+    "DeepSeek V3"
+  ],
+  "model_ids": [
+    "openai/gpt-4o",
+    "openai/gpt-4o-mini",
+    "meta-llama/llama-3.3-70b-instruct",
+    "deepseek/deepseek-chat-v3-0324"
+  ],
+  "parts": [
+    1,
+    2
+  ],
+  "n_repetitions_part1": 10,
+  "n_repetitions_part2": 1,
+  "n_shuffles": 3,
+  "logprobs": true,
+  "top_logprobs": 10,
+  "temperature": 1.0,
+  "max_tokens": 150,
+  "files": {
+    "part1": {
+      "path": "outputs/prompts/part1_prompts.jsonl",
+      "n_prompts": 148,
+      "n_reps": 10,
+      "n_models": 4,
+      "total_api_calls": 5920,
+      "sections": {
+        "wvs_confidence": 104,
+        "wvs_politicians": 44
+      }
+    },
+    "part2": {
+      "path": "outputs/prompts/part2_prompts.jsonl",
+      "n_prompts": 1728,
+      "n_reps": 1,
+      "n_models": 4,
+      "total_api_calls": 6912,
+      "sections": {
+        "stated_trust": 1152,
+        "revealed_trust": 576
+      }
+    }
+  },
+  "total_api_calls": 12832
+}

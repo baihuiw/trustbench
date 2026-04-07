@@ -1,0 +1,22 @@
+# Pilot: quick sanity check with one model, two countries
+name: "pilot"
+description: "Quick pilot run with limited scope"
+parts: [1, 2]
+
+# Override countries to just 2
+countries:
+  full_democracy:
+    - Norway
+  authoritarian:
+    - Russia
+
+# Override models to just 1
+models:
+  model_list:
+    - id: "openai/gpt-4o"
+      label: "GPT-4o"
+
+run:
+  n_repetitions_part1: 3
+  n_repetitions_part2: 1
+  dry_run: false

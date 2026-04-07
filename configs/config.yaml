@@ -1,0 +1,78 @@
+# Prevent Hydra from changing the working directory
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+
+# ── Project paths ──────────────────────────────────────────────
+paths:
+  data_dir: ./data
+  output_dir: ./outputs
+  prompt_dir: ./outputs/prompts
+  results_dir: ./outputs/results
+
+# ── OpenRouter API ─────────────────────────────────────────────
+api:
+  base_url: "https://openrouter.ai/api/v1/chat/completions"
+  key: ${oc.env:OPENROUTER_API_KEY}
+  max_retries: 5
+  retry_delay: 2.0
+  timeout: 120
+  requests_per_minute: 200
+
+# ── Models to benchmark (logprobs-confirmed via OpenRouter) ───
+models:
+  model_list:
+    - id: "openai/gpt-4o"
+      label: "GPT-4o"
+    - id: "openai/gpt-4o-mini"
+      label: "GPT-4o Mini"
+    - id: "meta-llama/llama-3.3-70b-instruct"
+      label: "Llama 3.3 70B"
+    - id: "deepseek/deepseek-chat-v3-0324"
+      label: "DeepSeek V3"
+
+# ── Countries (12 spanning regime types) ───────────────────────
+countries:
+  full_democracy:
+    - Norway
+    - Canada
+    - Japan
+  flawed_democracy:
+    - United States
+    - India
+    - Hungary
+  hybrid_regime:
+    - Ukraine
+    - Turkey
+    - Nigeria
+  authoritarian:
+    - Russia
+    - China
+    - Saudi Arabia
+
+# ── Institutions for Part 2 ────────────────────────────────────
+institutions:
+  core:
+    - government
+    - military
+    - media
+  extended:
+    - judiciary
+    - elections
+    - central_bank
+    - police
+
+# ── Run settings ───────────────────────────────────────────────
+run:
+  n_repetitions_part1: 100   # 100 reps for WVS-style items
+  n_repetitions_part2: 1     # 1 rep for stated + revealed (start small)
+  n_shuffles: 0              # shuffled scale orderings per item (0=original only, 3=4 total variations)
+  temperature: 1.0
+  max_tokens: 150            # first token = choice, rest = justification (1-2 sentences)
+  seed: null                 # set for reproducibility; null = vary
+  dry_run: false             # if true, generate prompts but don't call API
+  parts: [1, 2]              # which study parts to run
+  batch_size: 30             # concurrent API requests
+  logprobs: true             # request log-probabilities from API
+  top_logprobs: 10           # number of top token logprobs to return
