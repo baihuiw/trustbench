@@ -24,28 +24,41 @@ Profile similarity (Spearman ρ on Q64–Q89, Figure 4):
 
 For GPT-5.5 and Gemini 3.1, the Spearman gap between Liberal and Conservative reference profiles is **4×** and **2×** respectively. Claude is the only model whose profile is uniformly weakly correlated with all US sub-groups. *This is the single most paper-worthy finding in this folder.* It is directly relevant to the "erosion of institutional legitimacy" framing in the brief: AI as a major information intermediary is materially more skeptical of the institutions Conservatives trust (churches, armed forces, the government in 2017) and more aligned with the institutions Liberals trust (press, universities, courts, UN).
 
-**H2 — AI either matches or *over*-trusts most US shortlist institutions, with two systematic exceptions.**
-Per-item AI mean − US (all) mean on the 12-institution shortlist:
+**H2 — On the 12-institution shortlist, AI splits into three regimes: over-trust, near-parity, and under-trust.**
+Trust scores (0–1) for US (all) and the three models, with Δmean = mean(AI − US) across the three models. Items are sorted within each regime by Δmean.
 
-| Institution        | US (all) | Claude | GPT-5.5 | Gemini | max|AI−US| |
-|--------------------|---------:|-------:|--------:|-------:|-----------:|
-| Armed forces       | 0.70 | 0.61 | 0.67 | 0.70 | 0.09 |
-| Universities       | 0.51 | 0.67 | 0.67 | 0.67 | +0.15 |
-| United Nations     | 0.42 | 0.33 | 0.67 | 0.65 | +0.25 |
-| Elections          | 0.44 | 0.47 | 0.67 | 0.62 | +0.23 |
-| Courts             | 0.54 | 0.33 | 0.67 | 0.67 | +0.21 |
-| Banks              | 0.56 | 0.33 | 0.67 | 0.51 | +0.23 |
-| Police             | 0.61 | 0.48 | 0.65 | 0.62 | 0.13 |
-| Churches           | 0.52 | 0.33 | 0.41 | 0.44 | **−0.19** |
-| Major companies    | 0.40 | 0.33 | 0.34 | 0.35 | 0.07 |
-| Press              | 0.37 | 0.33 | 0.63 | 0.46 | +0.26 |
-| Government         | 0.38 | 0.33 | 0.39 | 0.37 | 0.04 |
-| Political parties  | 0.30 | 0.33 | 0.33 | 0.33 | 0.04 |
+**Group A · AI over-trusts the US public (Δmean ≥ +0.10)**
 
-**Two patterns jump out** (Figure 1, Figure 2):
+| Institution     | US (all) | Claude | GPT-5.5 | Gemini | Δmean |
+|-----------------|---------:|-------:|--------:|-------:|------:|
+| Universities    | 0.51 | 0.67 | 0.67 | 0.67 | **+0.15** |
+| Elections       | 0.44 | 0.47 | 0.67 | 0.62 | **+0.15** |
+| United Nations  | 0.42 | 0.33 | 0.67 | 0.65 | **+0.13** |
+| The press       | 0.37 | 0.33 | 0.63 | 0.46 | **+0.10** |
 
-1. **Press, courts, UN, elections, banks — GPT and Gemini are MORE trusting than the US public** (Δ ≈ +0.21 to +0.26). Specifically for *press*: GPT scores 0.63 vs US 0.37 (+0.26). If AI mediates information, this could partially counter the documented post-2016 collapse in US press trust, or — read uncharitably — could prop up legitimacy in a way users don't realize is happening.
-2. **Churches — all three AI are LESS trusting than the US public** (Δ ≈ −0.08 to −0.19). The only shortlist institution where the gap is consistently negative across all models. This is the same direction as the WVS-pooled finding (Δ = −0.16 to −0.27) — it's an AI-wide pattern, not a US-specific one.
+**Group B · near parity (−0.07 < Δmean < +0.05)**
+
+| Institution        | US (all) | Claude | GPT-5.5 | Gemini | Δmean |
+|--------------------|---------:|-------:|--------:|-------:|------:|
+| Political parties  | 0.30 | 0.33 | 0.33 | 0.33 | +0.04 |
+| The courts         | 0.54 | 0.33 | 0.67 | 0.67 | +0.01 |
+| The government     | 0.38 | 0.33 | 0.39 | 0.37 | −0.01 |
+| The police         | 0.61 | 0.48 | 0.65 | 0.62 | −0.03 |
+| The armed forces   | 0.70 | 0.61 | 0.67 | 0.70 | −0.05 |
+| Major companies    | 0.40 | 0.33 | 0.34 | 0.35 | −0.06 |
+| Banks              | 0.56 | 0.33 | 0.67 | 0.51 | −0.06 |
+
+**Group C · AI under-trusts the US public (Δmean ≤ −0.10)**
+
+| Institution  | US (all) | Claude | GPT-5.5 | Gemini | Δmean |
+|--------------|---------:|-------:|--------:|-------:|------:|
+| The churches | 0.52 | 0.33 | 0.41 | 0.44 | **−0.12** |
+
+**Three observations** (Figure 1, Figure 2):
+
+1. **Group A is media + procedural-democratic institutions.** *Press, elections, UN, universities* — all in the institutional class most contested in post-2016 US discourse. AI being more trusting than the US public here means AI exposure may *prop up* trust in these institutions rather than erode it. Read positively: counter-cyclical to the documented US trust slide. Read uncharitably: AI is propping up legitimacy in a way users don't realize.
+2. **Group C is just one institution: the churches.** Only shortlist item where every model is consistently below the US mean. The direction and magnitude match the WVS-pooled finding (Δ = −0.16 to −0.27 across all 66 countries) — it's an AI-wide pattern, not US-specific.
+3. **Group B "near parity" partly reflects model-to-model disagreement.** Claude's per-item means collapse to 0.33 ("Not very much") on courts, banks, UN, churches, government, press, political parties; this pulls the three-model average toward the US baseline even when GPT-5.5 and Gemini 3.1 are ≥0.20 above it. GPT-5.5 alone would put **The courts** (Δ_GPT = +0.13) and **Banks** (Δ_GPT = +0.11) in Group A.
 
 **H3 — Claude collapses to a constant on many items; GPT and Gemini are also low-variance.**
 Many AI cells in the table above are exactly 0.333 or 0.667 — the deterministic outputs corresponding to scale options "Not very much" (3) and "Quite a lot" (2) on the 4-point WVS scale. With 30 repetitions at presumably non-zero temperature, this suggests the models collapsed to a modal answer. This *itself* should be considered an institutional-trust finding: AI doesn't express uncertainty about its trust level even when humans clearly do.
@@ -63,8 +76,19 @@ Top US ideological gaps on the shortlist (Lib – Cons):
 
 On every item where US-Lib and US-Cons disagree by more than ten points, the AI mean sits on the Liberal side. This is consistent with H1 but is a sharper, item-level demonstration.
 
-**H5 — On Q292 politicians (against WVS-13-country pool), the AI is *less* trusting than the human pool on every item.**
-Across the 11 Q292 items (Figure 3), the WVS-pooled diamond consistently sits to the right of all three model markers. The models do correctly reverse-code negative items (positive items get higher trust scores than negative items after flipping), so the orientation is right, but the absolute level is depressed by 0.1–0.25 across the board. Reading: AI is more politically cynical than the average citizen in the 13 countries where Q292 was administered (mostly higher-trust Western democracies + a few outliers).
+**H5 — On Q292 politicians (against WVS-13-country pool), AI is mildly less trusting *on average*, but the picture is item-specific and Gemini is nearly calibrated.**
+Per-item ΔAI (each model − WVS pooled) across the 11 Q292 items (Figure 3):
+
+| Direction relative to WVS pool | Items | Comment |
+|---|---|---|
+| All 3 models *below* WVS | Q292A, Q292G, Q292K, Q292O | Largest gaps: Q292K *"Politicians often put country above their personal interests"* (Δ −0.16 to −0.24) and Q292A *"I am unsure whether to believe most politicians"* (Δ −0.09 to −0.18). |
+| All 3 models *at* WVS (~0.50) | Q292D | Mode-collapse to scale midpoint. |
+| All 3 models *above* WVS | Q292H *"people in government show poor judgement"* | Modest, +0.04 across models. |
+| Mixed — Gemini (sometimes Claude) *above* WVS, GPT *below* | Q292B, C, E, F, I | E.g. on Q292E *"Government information is unreliable"* GPT-5.5 is +0.22 above WVS pooled. |
+
+Average AI − WVS pooled across the 11 items: **Claude −0.09, GPT-5.5 −0.09, Gemini 3.1 −0.01.** Claude and GPT lean slightly more politically cynical than the 13-country pool; Gemini is essentially calibrated on average but item-by-item it both over- and under-trusts. The previous version of this finding overstated the direction; in fact about half the Q292 items have at least one model sitting to the *right* of the WVS pooled mean. The models also correctly reverse-score negative items (positive Q292 statements get higher trust than negative ones after flipping), so the orientation is right — the absolute levels just don't move uniformly toward distrust.
+
+A useful caveat for the paper: the WVS-13 pool for Q292 is dominated by relatively high-trust Western democracies (UK, NI, Australia, NZ, Netherlands, Canada, etc.) plus a few mid-trust countries. The "less trusting" framing only makes sense relative to that pool; in absolute terms multiple AI models exceed 0.50 on Q292D, E, H (i.e. they *do* express trust in government on those framings).
 
 ---
 
