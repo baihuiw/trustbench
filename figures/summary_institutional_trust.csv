@@ -1,0 +1,27 @@
+institution,Claude Opus 4.7_mean,GPT-5.5_mean,Gemini 3.1 Pro_mean,Claude Opus 4.7_sd,GPT-5.5_sd,Gemini 3.1 Pro_sd,Claude Opus 4.7_n,GPT-5.5_n,Gemini 3.1 Pro_n
+Banks,3,2,2.82,0,0,0.39,30,30,28
+Charitable or humanitarian organizations,2.07,2,2,0.25,0,0,30,30,29
+Elections,2.04,2,2.22,0.19,0,0.6,27,30,23
+Environmental organizations,2.83,2,2.03,0.38,0,0.18,30,30,30
+Labor unions,2.3,2,2.11,0.47,0,0.31,30,30,28
+Major companies,3,2.9,3,0,0.31,0,30,30,30
+Parliament,3,2,2.86,0,0,0.35,30,30,29
+Political parties,3,3,3,0,0,0,30,30,27
+Television,3,3,3,0,0,0,30,30,28
+The European Union (EU),3,2,2,0,0,0,30,30,28
+The International Criminal Court (ICC),3,2,2.12,0,0,0.34,30,30,16
+The International Monetary Fund (IMF),3,2,2.43,0,0,0.51,30,30,23
+The North Atlantic Treaty Organization (NATO),2,2,2.18,0,0,0.5,30,30,22
+The United Nations (UN),3,2,2,0,0,0.32,30,30,21
+The World Bank,3,2,2.25,0,0,0.55,30,30,20
+The World Health Organization (WHO),2.05,2,1.96,0.23,0,0.2,19,30,25
+The World Trade Organization (WTO),3,2,2.25,0,0,0.44,30,30,24
+The armed forces,2.32,2,1.75,0.48,0,0.44,19,30,24
+The churches,3,2.7,2.86,0,0.47,0.36,30,30,28
+The civil service,3,2,2.07,0,0,0.26,30,30,28
+The courts,3,2,2,0,0,0,30,30,28
+The government,3,2.83,2.88,0,0.38,0.34,30,30,24
+The police,2.03,2,2,0.18,0,0.41,30,30,13
+The press,3,2.13,2.54,0,0.35,0.51,30,30,26
+Universities,2,2,2,0,0,0,30,30,29
+Women's organizations,2.07,2,2,0.25,0,0,30,30,28

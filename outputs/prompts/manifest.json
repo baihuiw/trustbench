@@ -39,9 +39,9 @@
     1,
     2
   ],
-  "n_repetitions_part1": 10,
+  "n_repetitions_part1": 100,
   "n_repetitions_part2": 1,
-  "n_shuffles": 3,
+  "n_shuffles": 0,
   "logprobs": true,
   "top_logprobs": 10,
   "temperature": 1.0,
@@ -49,13 +49,13 @@
   "files": {
     "part1": {
       "path": "outputs/prompts/part1_prompts.jsonl",
-      "n_prompts": 148,
-      "n_reps": 10,
+      "n_prompts": 37,
+      "n_reps": 100,
       "n_models": 4,
-      "total_api_calls": 5920,
+      "total_api_calls": 14800,
       "sections": {
-        "wvs_confidence": 104,
-        "wvs_politicians": 44
+        "wvs_confidence": 26,
+        "wvs_politicians": 11
       }
     },
     "part2": {
@@ -70,5 +70,5 @@
       }
     }
   },
-  "total_api_calls": 12832
+  "total_api_calls": 21712
 }

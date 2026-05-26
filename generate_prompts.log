@@ -214,3 +214,21 @@
 [2026-04-05 21:47:35,020][trustbench.generate][INFO] -   1. Review prompts:  python preview_prompts.py --part 1 --n 0
 [2026-04-05 21:47:35,020][trustbench.generate][INFO] -   2. Run Part 1:      python run_experiments.py --prompts outputs/prompts/part1_prompts.jsonl
 [2026-04-05 21:47:35,020][trustbench.generate][INFO] -   3. Run Part 2:      python run_experiments.py --prompts outputs/prompts/part2_prompts.jsonl
+[2026-04-09 20:22:14,098][trustbench.generate][INFO] - TrustBench — Prompt Generation
+[2026-04-09 20:22:14,105][trustbench.generate][INFO] - Saved 37 prompts → outputs/prompts/part1_prompts.jsonl
+[2026-04-09 20:22:14,105][trustbench.generate][INFO] - Part 1: 37 prompts → 14800 API calls (4 models × 100 reps)
+[2026-04-09 20:22:14,182][trustbench.generate][INFO] - Saved 1728 prompts → outputs/prompts/part2_prompts.jsonl
+[2026-04-09 20:22:14,182][trustbench.generate][INFO] - Part 2: 1728 prompts (1152 stated + 576 revealed) → 6912 API calls
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - Manifest → outputs/prompts/manifest.json
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - ════════════════════════════════════════════════════════════
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - PROMPT GENERATION COMPLETE
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   Output directory: outputs/prompts
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   part1: 37 prompts → outputs/prompts/part1_prompts.jsonl
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   part2: 1728 prompts → outputs/prompts/part2_prompts.jsonl
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   Total API calls when run: 21712
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - ════════════════════════════════════════════════════════════
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - 
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] - Next steps:
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   1. Review prompts:  python preview_prompts.py --part 1 --n 0
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   2. Run Part 1:      python run_experiments.py --prompts outputs/prompts/part1_prompts.jsonl
+[2026-04-09 20:22:14,183][trustbench.generate][INFO] -   3. Run Part 2:      python run_experiments.py --prompts outputs/prompts/part2_prompts.jsonl
