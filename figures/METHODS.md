@@ -15,17 +15,16 @@ Modules live in `src/analysis/`. Outputs in `figures/eda/`.
 
 **Step 4 · `scoring.py`.** Maps every response to a 0–1 trust score (0 = no trust, 1 = full trust). LLM and WVS use *opposite* raw-to-trust formulas because their cleaned scales point in opposite directions; six Q292 items (A, B, E, F, H, I) reverse-coded for semantic negativity.
 
-# LLM side (scoring.py::add_trust_score)
-# LLM answer c=1 means "A great deal" → should produce trust=1.0
+LLM answer c=1 means "A great deal" → should produce trust=1.0
 trust_llm = (n - c) / (n - 1)
-#   c=1: (4-1)/3 = 1.0  ✓ highest trust
-#   c=4: (4-4)/3 = 0.0  ✓ lowest trust
+c=1: (4-1)/3 = 1.0  ✓ highest trust
+c=4: (4-4)/3 = 0.0  ✓ lowest trust
 
-# WVS side (scoring.py::wvs_country_trust)
-# WVS cleaned c=4 means "A great deal" → should produce trust=1.0
+WVS side (scoring.py::wvs_country_trust)
+WVS cleaned c=4 means "A great deal" → should produce trust=1.0
 trust_wvs = (c - 1) / (n - 1)
-#   c=1: (1-1)/3 = 0.0  ✓ lowest trust
-#   c=4: (4-1)/3 = 1.0  ✓ highest trust
+c=1: (1-1)/3 = 0.0  ✓ lowest trust
+c=4: (4-1)/3 = 1.0  ✓ highest trust
 
 **Step 5 · `aggregate.py`.** Bootstrap CIs on the trust score for each (model × item) and (model × section) cell. Chose bootstrap over parametric CIs because many model responses are mode-collapsed (zero variance).
 
