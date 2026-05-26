@@ -1,7 +1,7 @@
 # TrustBench v2 EDA — methods walkthrough
 
 
-Python: `/Users/wangbaihui/anaconda3/bin/python` (pandas 2.1, numpy 1.26, matplotlib 3.10, seaborn 0.13, scipy 1.11).
+Python: (pandas 2.1, numpy 1.26, matplotlib 3.10, seaborn 0.13, scipy 1.11).
 Modules live in `src/analysis/`. Outputs in `figures/eda/`.
 
 ---
