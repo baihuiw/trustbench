@@ -33,6 +33,18 @@ trust_wvs = (c - 1) / (n - 1)
 c=1: (1-1)/3 = 0.0  ✓ lowest trust
 c=4: (4-1)/3 = 1.0  ✓ highest trust
 
+
+Q292 (politicians) was left in raw codebook direction in the cleaned WVS file (1 = Disagree strongly, 5 = Agree strongly). And the LLM was prompted with the same convention (1 = Disagree strongly, 5 = Agree strongly). So for Q292 the LLM and WVS raw scales do match — both go 1=disagree, 5=agree.
+
+What differs for Q292 is just whether agreement means trust:
+
+Q292C, D, G, K, O (positively phrased: "politicians are honest") → high agreement = high trust
+Q292A, B, E, F, H, I (negatively phrased: "I'm cautious about politicians") → high agreement = low trust
+So for Q292, both LLM and WVS use the same formula:
+
+trust = (c - 1) / (n - 1)   if positively phrased
+trust = (n - c) / (n - 1)   if negatively phrased   (reverse-coded)
+
 **Step 5 · `aggregate.py`.** Bootstrap CIs on the trust score for each (model × item) and (model × section) cell. Chose bootstrap over parametric CIs because many model responses are mode-collapsed (zero variance).
 
 **Step 6 · `wvs.py`.** Builds pooled WVS means + 25/50/75-percentile country distributions per item, plus the model↔country resemblance ranker (Spearman ρ on the 26-item Q64–Q89 profile).
