@@ -72,8 +72,6 @@ Across the 11 Q292 items (Figure 3), the WVS-pooled diamond consistently sits to
 
 > *"The mainstream concern: AI will nudge users to be less trusting of important democratic institutions. The AI safety concern: AI that distrusts or disrespects human institutions will try to disempower them."*
 
-What this data does and does not say:
-
 - **Mainstream concern, supported:** Yes for *churches* and *Q292 politicians/government* (AI more skeptical than US/WVS pool, Δ up to −0.27). If users update toward AI's distribution, those institutions lose legitimacy at the margins.
 - **Mainstream concern, contradicted:** *No* for *press, courts, UN, elections, banks* — for these, the AI is *more* trusting than the US public. If anything, AI exposure may shore up trust in mainstream-media and procedural-democratic institutions. The user's note that "if AI is more trusting than the public on some institutions, it might prop up legitimacy in ways that aren't obviously good either" applies here directly.
 - **AI safety concern (AI disempowering institutions):** Not directly testable from this data — we measured stated trust, not behavior. But the *churches* and *politicians* under-trust is concentrated in a small number of institutions; AI doesn't appear hostile to *all* human institutions, just specific subsets (and those subsets correlate with US Liberal priors — H1, H4).
