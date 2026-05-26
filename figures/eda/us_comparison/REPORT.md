@@ -22,7 +22,7 @@ Profile similarity (Spearman ρ on Q64–Q89, Figure 4):
 | US Centrist (Q240 5)       | 0.34 | 0.51 | 0.59 |
 | US Conservative (Q240 6–10)| **0.12** | **0.17** | **0.27** |
 
-For GPT-5.5 and Gemini 3.1, the Spearman gap between Liberal and Conservative reference profiles is **4×** and **2×** respectively. Claude is the only model whose profile is uniformly weakly correlated with all US sub-groups. *This is the single most paper-worthy finding in this folder.* It is directly relevant to the "erosion of institutional legitimacy" framing in the brief: AI as a major information intermediary is materially more skeptical of the institutions Conservatives trust (churches, armed forces, the government in 2017) and more aligned with the institutions Liberals trust (press, universities, courts, UN).
+For GPT-5.5 and Gemini 3.1, the Spearman gap between Liberal and Conservative reference profiles is **4×** and **2×** respectively. Claude is the only model whose profile is uniformly weakly correlated with all US sub-groups. It is directly relevant to the "erosion of institutional legitimacy" framing in the brief: AI as a major information intermediary is materially more skeptical of the institutions Conservatives trust (churches, armed forces, the government in 2017) and more aligned with the institutions Liberals trust (press, universities, courts, UN).
 
 **H2 — On the 12-institution shortlist, AI splits into three regimes: over-trust, near-parity, and under-trust.**
 Trust scores (0–1) for US (all) and the three models, with Δmean = mean(AI − US) across the three models. Items are sorted within each regime by Δmean.
