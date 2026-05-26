@@ -73,10 +73,3 @@ All three models correctly score positive Q292 statements higher than negatively
 | `fig6_section_summary.png` | Section-level bar chart with WVS pooled mean overlays. |
 | `fig7_refusal.png` | (A) refusal % by framing, (B) original / recovered / refused breakdown per model. |
 | `fig8_politicians.png` | Q292 item-level deep-dive, separating reverse- and positive-phrased items, with WVS country strip + pooled mean. |
-
-## Next analytic steps (paper-shaped)
-
-1. **Anchor experiment integration.** `anchor_results_20260414_140054.jsonl` is sitting outside this EDA — fold in once we agree on how the anchor maps to TrustBench items.
-2. **Demographic conditioning of WVS comparison.** Right now we compare LLM responses to *country-mean* WVS scores. The respondent-level file (97k rows × 93 columns) supports conditioning on age / education / urbanicity / regime type — a stronger headline would be "LLMs resemble high-education urban respondents in democratic countries" or refute it.
-3. **Sub-scale construction for Q292.** With reverse-coding correct, build the four-factor stated-trust scale (OT/BI/CO/IH per `part2.py`) and compare to revealed-trust (`anchor_experiment.py`) — that's the v2-→v3 path the proposal hints at.
-4. **Refusal as a signal, not noise.** Claude's verbal-label refusal spike + Gemini's uniform refusal rate are model-specific behaviors that probably deserve their own section/figure rather than being shown as a parse-rate footnote.
