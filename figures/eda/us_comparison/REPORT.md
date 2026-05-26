@@ -74,7 +74,7 @@ Top US ideological gaps on the shortlist (Lib – Cons):
 | The churches    | 0.43   | 0.59    | −0.16 | Lib (all 3 AI ≈ 0.33–0.44) |
 | The armed forces| 0.63   | 0.76    | −0.13 | Lib (all 3 AI ≈ 0.61–0.70) |
 
-On every item where US-Lib and US-Cons disagree by more than ten points, the AI mean sits on the Liberal side. This is consistent with H1 but is a sharper, item-level demonstration.
+On every item where US-Lib and US-Cons disagree by more than ten points, the AI mean sits on the Liberal side. 
 
 **H5 — On Q292 politicians (against WVS-13-country pool), AI is mildly less trusting *on average*, but the picture is item-specific and Gemini is nearly calibrated.**
 Per-item ΔAI (each model − WVS pooled) across the 11 Q292 items (Figure 3):
