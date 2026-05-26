@@ -10,7 +10,7 @@
 
 ---
 
-## Headline findings (paper-shaped)
+## Headline findings
 
 **H1 — AI sits closer to US Liberals than to US Conservatives on the institutional-trust profile.**
 Profile similarity (Spearman ρ on Q64–Q89, Figure 4):
